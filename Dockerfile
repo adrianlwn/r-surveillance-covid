@@ -24,8 +24,7 @@ RUN apt-get update && \
   protobuf-compiler \
   libmagick++-dev
   
-RUN mkdir -p my_Rlib  
-RUN R -e "install.packages(c('devtools', 'testthat', 'roxygen2'), lib = 'my_Rlib' )"
+RUN R -e "install.packages(c('devtools', 'testthat', 'roxygen2'))"
 
   
 
