@@ -68,7 +68,7 @@ RUN R -e "install.packages(c('devtools',
             'tidyr',
             'V8',
             'webshot',
-            'zoo'))"
+            'zoo'), repos='http://cran.us.r-project.org')"
 
   
 
