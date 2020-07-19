@@ -24,7 +24,7 @@ RUN apt-get update && \
   protobuf-compiler \
   libmagick++-dev
   
-RUN R -e "install.packages(c('devtools', 'testthat', 'roxygen2', 'magick', 'data.table', 'dplyr', 'DT', 'devEMF', 'ggplot2', 'cowplot', 'officer', 'openxlsx', 'flextable', 'hrbrthemes', 'kableExtra', 'knitr', 'leaflet', 'lubridate', 'data.table', 'magrittr', 'mapview', 'plotly', 'RColorBrewer', 'rgdal', 'readr', 'readxl', 'rlang', 'rmarkdown', 'rdrop2', 'rmapshaper', 'rsconnect', 'scales', 'sf', 'shiny', 'shinyjs', 'shinydashboard', 'shinymanager', 'shinycssloaders', 'shinyWidgets', 'shinyBS', 'sodium', 'tidyr', 'V8', 'webshot','zoo'), repos='http://cran.us.r-project.org'), dependencies=TRUE"
+RUN R -e "install.packages(c('devtools', 'testthat', 'roxygen2', 'magick', 'data.table', 'dplyr', 'DT', 'devEMF', 'ggplot2', 'cowplot', 'officer', 'openxlsx', 'flextable', 'hrbrthemes', 'kableExtra', 'knitr', 'leaflet', 'lubridate', 'data.table', 'magrittr', 'mapview', 'plotly', 'RColorBrewer', 'rgdal', 'readr', 'readxl', 'rlang', 'rmarkdown', 'rdrop2', 'rmapshaper', 'rsconnect', 'scales', 'sf', 'shiny', 'shinyjs', 'shinydashboard', 'shinymanager', 'shinycssloaders', 'shinyWidgets', 'shinyBS', 'sodium', 'tidyr', 'V8', 'webshot','zoo'), repos='http://cran.us.r-project.org'), dependencies=TRUE)"
 
   
 
