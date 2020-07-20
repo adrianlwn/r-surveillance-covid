@@ -22,7 +22,8 @@ RUN apt-get update && \
   libjq-dev \
   libprotobuf-dev \
   protobuf-compiler \
-  libmagick++-dev
+  libmagick++-dev \
+  curl
 
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
   
