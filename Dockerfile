@@ -8,8 +8,6 @@ RUN apt-get update && \
   libxml2-dev \
   zlib1g-dev \
   git \
-  libcurl4-openssl-dev \
-  libssl-dev \
   xclip \
   libsasl2-dev \
   zlib1g-dev \
@@ -25,9 +23,6 @@ RUN apt-get update && \
   libmagick++-dev \
   curl
   
-RUN R -e "install.packages(c('devtools', 'testthat', 'roxygen2', 'magick', 'data.table', 'dplyr', 'DT', 'devEMF', 'ggplot2', 'cowplot', 'officer', 'openxlsx', 'flextable', 'hrbrthemes', 'kableExtra', 'knitr', 'leaflet', 'lubridate', 'data.table', 'magrittr', 'mapview', 'plotly', 'RColorBrewer', 'rgdal', 'readr', 'readxl', 'rlang', 'rmarkdown', 'rdrop2', 'rmapshaper', 'rsconnect', 'scales', 'sf', 'shiny', 'shinyjs', 'shinydashboard', 'shinymanager', 'shinycssloaders', 'shinyWidgets', 'shinyBS', 'sodium', 'tidyr', 'V8', 'webshot','zoo'), repos='http://cran.us.r-project.org', dependencies=TRUE)"
+RUN R -e "install.packages(c('visNetwork', 'devtools', 'testthat', 'roxygen2', 'magick', 'data.table', 'dplyr', 'DT', 'devEMF', 'ggplot2', 'cowplot', 'officer', 'openxlsx', 'flextable', 'hrbrthemes', 'kableExtra', 'knitr', 'leaflet', 'lubridate', 'data.table', 'magrittr', 'mapview', 'plotly', 'RColorBrewer', 'rgdal', 'readr', 'readxl', 'rlang', 'rmarkdown', 'rdrop2', 'rmapshaper', 'rsconnect', 'scales', 'sf', 'shiny', 'shinyjs', 'shinydashboard', 'shinymanager', 'shinycssloaders', 'shinyWidgets', 'shinyBS', 'sodium', 'tidyr', 'V8', 'webshot','zoo'), repos='http://cran.us.r-project.org', dependencies=TRUE)"
 
-  
-
-  
- 
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
